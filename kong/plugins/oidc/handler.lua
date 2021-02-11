@@ -61,7 +61,7 @@ function handle(oidcConfig)
     end
   end
 
-  if response == nil then
+  if (oidcConfig.enable_authentication_flow and response == nil) then
     response = make_oidc(oidcConfig)
     if response then
       if response.user or response.id_token then

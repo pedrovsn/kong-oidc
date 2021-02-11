@@ -36,5 +36,6 @@ return {
     bearer_jwt_auth_signing_algs = { type = "array", required = true, default = { "RS256" } },
     header_names = { type = "array", required = true, default = {} },
     header_claims = { type = "array", required = true, default = {} },
+    enable_authentication_flow = { type = "string", required = true, default = "yes" },
   }
 }
